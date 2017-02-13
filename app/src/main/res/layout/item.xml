@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="标题"
+        android:layout_toRightOf="@id/item_iv"
+        android:layout_alignTop="@id/item_iv"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/item_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="内容"
+        android:layout_toRightOf="@id/item_iv"
+        android:layout_alignBottom="@id/item_iv"
+        />
+
+</RelativeLayout>
